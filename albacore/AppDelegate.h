@@ -13,10 +13,10 @@
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *nav;
-@property (strong, nonatomic) UITabBarController *tab;
+@property (strong, nonatomic) UITabBarController *tabBarController;
 
-@property (strong, nonatomic) SpotViewController *vc;
-@property (strong, nonatomic) SpotViewController *vc2;
+@property (strong, nonatomic) SpotViewController *homePageController;
+@property (strong, nonatomic) SpotViewController *spotPageController;
 
 
 @end

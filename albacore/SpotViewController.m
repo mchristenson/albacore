@@ -23,7 +23,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
-        locationLabelString = @"Hello, Albacore.";
+        locationLabelString = @"Hello, Albacore!";
         NSLog(@"init");
         
     }
@@ -67,7 +67,7 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:2.5];
+    [UIView setAnimationDuration:0.5];
     locationLabel.center = CGPointMake(300.0, 150);
     [UIView commitAnimations];
     NSLog(@"viewDidAppear");

@@ -14,6 +14,8 @@
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
+		EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */; };
+		EAE6D5CA1A9C5A940020EA72 /* splash-page.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C81A9C5A940020EA72 /* splash-page.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		EA6E68FC1A96D697005D8AB0 /* albacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6E69011A96D697005D8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6E69021A96D697005D8AB0 /* albacoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albacoreTests.m; sourceTree = "<group>"; };
+		EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albacore-logo-2x.png"; sourceTree = "<group>"; };
+		EAE6D5C81A9C5A940020EA72 /* splash-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-page.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 				EA6E68F01A96D696005D8AB0 /* Main.storyboard */,
 				EA6E68F31A96D696005D8AB0 /* Images.xcassets */,
 				EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */,
+				EAE6D5C61A9C5A940020EA72 /* Images */,
 				EA6E68E61A96D696005D8AB0 /* Supporting Files */,
 			);
 			path = albacore;
@@ -117,6 +122,15 @@
 				EA6E69011A96D697005D8AB0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EAE6D5C61A9C5A940020EA72 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */,
+				EAE6D5C81A9C5A940020EA72 /* splash-page.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +213,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAE6D5CA1A9C5A940020EA72 /* splash-page.png in Resources */,
 				EA6E68F21A96D696005D8AB0 /* Main.storyboard in Resources */,
+				EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */,
 				EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */,
 				EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */,
 			);
