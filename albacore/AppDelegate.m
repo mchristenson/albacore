@@ -22,10 +22,10 @@
     self.window = [[UIWindow alloc] initWithFrame:fullScreen];
     
     self.vc = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
-    self.vc.title = @"Albacore Home";
+    self.vc.title = @"Home";
     
     self.vc2 = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
-    self.vc2.title = @"Albacore Spot";
+    self.vc2.title = @"Spot";
     
     self.tab = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
     self.tab.viewControllers = [NSArray arrayWithObjects:self.vc, self.vc2, nil];
