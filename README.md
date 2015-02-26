@@ -1,6 +1,6 @@
 # albacore
 
-  #Version 0.0
+-Version 0.0
   Update 2.25.15
   - Changed Root ViewController to NavigationController. This will better suit the Hierarchial Navigation that Albacore will   contain. Began Design of Home Page and Spot Page
 
