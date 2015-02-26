@@ -21,16 +21,12 @@
     
     self.window = [[UIWindow alloc] initWithFrame:fullScreen];
     
-    self.homePageController = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
-    self.homePageController.title = @"Home";
+    self.homePageController = [[HomeViewController alloc] initWithNibName:nil bundle:nil];
+    self.homePageController.title = @"Albacore";
     
-    self.spotPageController = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
-    self.spotPageController.title = @"Spot";
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.homePageController];
     
-    self.tabBarController = [[UITabBarController alloc] initWithNibName:nil bundle:nil];
-    self.tabBarController.viewControllers = [NSArray arrayWithObjects:self.homePageController, self.spotPageController, nil];
-    
-    self.window.rootViewController = self.tabBarController;
+    self.window.rootViewController = self.navigationController;
     
     [self.window makeKeyAndVisible];
     

@@ -1,21 +1,38 @@
 //
-//  ViewController.m
+//  HomeViewController.m
 //  albacore
 //
-//  Created by Mark Christenson on 2/19/15.
+//  Created by Mark Christenson on 2/24/15.
 //  Copyright (c) 2015 Mark Christenson. All rights reserved.
 //
 
-#import "SpotViewController.h"
+#import "HomeViewController.h"
 
-@interface SpotViewController ()
+@interface HomeViewController ()
 
 @end
 
-@implementation SpotViewController
+@implementation HomeViewController
+
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
+    spotView = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
+    spotView.title = @"Santa Monica";
+    [self.navigationController pushViewController:spotView animated:YES];
+}
+
+- (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+}
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
+}
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    
 }
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,6 +40,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
+        locationLabelString = @"Hello, Albacore";
         NSLog(@"init");
         
     }
@@ -70,7 +88,7 @@
     locationLabel.center = CGPointMake(300.0, 150);
     [UIView commitAnimations];
     NSLog(@"viewDidAppear");
-
+    
 }
 
 

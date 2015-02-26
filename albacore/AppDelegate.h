@@ -7,17 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SpotViewController.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *nav;
-@property (strong, nonatomic) UITabBarController *tabBarController;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
-@property (strong, nonatomic) SpotViewController *homePageController;
-@property (strong, nonatomic) SpotViewController *spotPageController;
-
+@property (strong, nonatomic) HomeViewController *homePageController;
 
 @end
 
