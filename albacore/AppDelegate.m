@@ -22,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:fullScreen];
     
     self.homePageController = [[HomeViewController alloc] initWithNibName:nil bundle:nil];
-    self.homePageController.title = @"Albacore";
+    self.homePageController.title = @"Home";
     
     self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.homePageController];
     

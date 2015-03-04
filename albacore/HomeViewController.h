@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "SpotViewController.h"
 
-@interface HomeViewController : UIViewController
-{
-    UILabel *locationLabel;
-    NSString *locationLabelString;
-    SpotViewController *spotView;
-}
+@interface HomeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+//Spot Controller
+@property(nonatomic, strong) SpotViewController *spotView;
+    
+//Table View
+@property(nonatomic, strong) UITableViewController *spotTableViewController;
+@property(nonatomic, strong) NSArray *spotList;
 
 @end
