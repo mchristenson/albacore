@@ -1,6 +1,9 @@
 # albacore
 
 - Version 0.0
+  - Update 3.3.15
+    - Added Albacore Model Classes to use with MSW Data
+  
   - Update 2.25.15
     - Changed Root ViewController to NavigationController. This will better suit the Hierarchial Navigation that Albacore will   contain. Began Design of Home Page and Spot Page
 
