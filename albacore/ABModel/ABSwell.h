@@ -10,4 +10,11 @@
 
 @interface ABSwell : NSObject
 
+@property(nonatomic, strong)NSDecimalNumber *minBreakingHeight;
+@property(nonatomic, strong)NSDecimalNumber *absMinBreakingHeight;
+@property(nonatomic, strong)NSDecimalNumber *maxBreakingHeight;
+@property(nonatomic, strong)NSDecimalNumber *absMaxBreakingHeight;
+@property(nonatomic, strong)NSString *unit;
+@property(nonatomic, strong)NSArray *components;
+
 @end

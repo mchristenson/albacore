@@ -10,4 +10,11 @@
 
 @interface ABWind : NSObject
 
+@property(nonatomic, strong)NSDecimalNumber *speed;
+@property(nonatomic, strong)NSDecimalNumber *direction;
+@property(nonatomic, strong)NSString *compassDirection;
+@property(nonatomic, strong)NSDecimalNumber *chill;
+@property(nonatomic, strong)NSDecimalNumber *gusts;
+@property(nonatomic, strong)NSString *unit;
+
 @end

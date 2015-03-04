@@ -10,4 +10,11 @@
 
 @interface ABCondition : NSObject
 
+@property(nonatomic, strong)NSDecimalNumber *pressure;
+@property(nonatomic, strong)NSDecimalNumber *temperature;
+@property(nonatomic, strong)NSDecimalNumber *weather;
+@property(nonatomic, strong)NSString *unitPressure;
+@property(nonatomic, strong)NSString *unitTemperature;
+
+
 @end

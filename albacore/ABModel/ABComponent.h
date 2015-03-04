@@ -10,4 +10,9 @@
 
 @interface ABComponent : NSObject
 
+@property(nonatomic, strong)NSDecimalNumber *height;
+@property(nonatomic, strong)NSDecimalNumber *period;
+@property(nonatomic, strong)NSDecimalNumber *direction;
+@property(nonatomic, strong)NSString *compassDirection;
+
 @end

@@ -15,8 +15,8 @@
 @interface ABReportSlice : NSObject
 
 @property (nonatomic, strong)NSString *timestamp;
-@property (nonatomic)NSInteger *solidRating;
-@property (nonatomic)NSInteger *fadedRating;
+@property (nonatomic)NSDecimalNumber *solidRating;
+@property (nonatomic)NSDecimalNumber *fadedRating;
 @property (nonatomic, strong)ABSwell *swell;
 @property (nonatomic, strong)ABWind *wind;
 @property (nonatomic, strong)ABCondition *condition;

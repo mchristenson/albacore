@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA14B8B81AA79F1B00B81BB7 /* ABComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14B8B71AA79F1B00B81BB7 /* ABComponent.m */; };
 		EA6E68E91A96D696005D8AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68E81A96D696005D8AB0 /* main.m */; };
 		EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */; };
 		EA6E68EF1A96D696005D8AB0 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EE1A96D696005D8AB0 /* SpotViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA14B8B61AA79F1B00B81BB7 /* ABComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABComponent.h; path = albacore/ABModel/ABComponent.h; sourceTree = "<group>"; };
+		EA14B8B71AA79F1B00B81BB7 /* ABComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABComponent.m; path = albacore/ABModel/ABComponent.m; sourceTree = "<group>"; };
 		EA6E68E31A96D696005D8AB0 /* albacore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = albacore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6E68E71A96D696005D8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6E68E81A96D696005D8AB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 				EABFF4D41AA69F1600363579 /* ABSwell.m */,
 				EABFF4D61AA69F8E00363579 /* ABWind.h */,
 				EABFF4D71AA69F8E00363579 /* ABWind.m */,
+				EA14B8B61AA79F1B00B81BB7 /* ABComponent.h */,
+				EA14B8B71AA79F1B00B81BB7 /* ABComponent.m */,
 				EABFF4D91AA69F9C00363579 /* ABCondition.h */,
 				EABFF4DA1AA69F9C00363579 /* ABCondition.m */,
 				EABFF4DC1AA69FA800363579 /* ABCharts.h */,
@@ -286,6 +291,7 @@
 			files = (
 				EA6E68EF1A96D696005D8AB0 /* SpotViewController.m in Sources */,
 				EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */,
+				EA14B8B81AA79F1B00B81BB7 /* ABComponent.m in Sources */,
 				EA6E68E91A96D696005D8AB0 /* main.m in Sources */,
 				EABFF4D81AA69F8E00363579 /* ABWind.m in Sources */,
 				EABFF4DE1AA69FA800363579 /* ABCharts.m in Sources */,

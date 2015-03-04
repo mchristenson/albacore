@@ -10,4 +10,10 @@
 
 @interface ABCharts : NSObject
 
+@property(nonatomic, strong)NSString *swellURL;
+@property(nonatomic, strong)NSString *periodURL;
+@property(nonatomic, strong)NSString *windURL;
+@property(nonatomic, strong)NSString *pressureURL;
+@property(nonatomic, strong)NSString *sstURL;
+
 @end
