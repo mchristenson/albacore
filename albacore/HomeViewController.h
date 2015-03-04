@@ -15,7 +15,7 @@
 @property(nonatomic, strong) SpotViewController *spotView;
     
 //Table View
-@property(nonatomic, strong) UITableView *spotTableView;
-@property(nonatomic,strong) NSArray *spotList;
+@property(nonatomic, strong) UITableViewController *spotTableViewController;
+@property(nonatomic, strong) NSArray *spotList;
 
 @end

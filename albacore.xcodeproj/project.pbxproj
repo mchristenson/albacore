@@ -14,8 +14,16 @@
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
+		EABFF4CA1AA6920A00363579 /* ABTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */; };
+		EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4CE1AA6977300363579 /* ABSurfSpot.m */; };
+		EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D11AA69E0A00363579 /* ABReportSlice.m */; };
+		EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D41AA69F1600363579 /* ABSwell.m */; };
+		EABFF4D81AA69F8E00363579 /* ABWind.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D71AA69F8E00363579 /* ABWind.m */; };
+		EABFF4DB1AA69F9C00363579 /* ABCondition.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4DA1AA69F9C00363579 /* ABCondition.m */; };
+		EABFF4DE1AA69FA800363579 /* ABCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4DD1AA69FA800363579 /* ABCharts.m */; };
 		EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */; };
 		EAE6D5CA1A9C5A940020EA72 /* splash-page.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C81A9C5A940020EA72 /* splash-page.png */; };
+		EAE6D5CD1A9D61C00020EA72 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +50,24 @@
 		EA6E68FC1A96D697005D8AB0 /* albacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6E69011A96D697005D8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6E69021A96D697005D8AB0 /* albacoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albacoreTests.m; sourceTree = "<group>"; };
+		EABFF4C81AA6920A00363579 /* ABTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABTableViewDelegate.h; path = albacore/ABTableViewDelegate.h; sourceTree = "<group>"; };
+		EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABTableViewDelegate.m; path = albacore/ABTableViewDelegate.m; sourceTree = "<group>"; };
+		EABFF4CD1AA6977300363579 /* ABSurfSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSurfSpot.h; path = albacore/ABModel/ABSurfSpot.h; sourceTree = "<group>"; };
+		EABFF4CE1AA6977300363579 /* ABSurfSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSurfSpot.m; path = albacore/ABModel/ABSurfSpot.m; sourceTree = "<group>"; };
+		EABFF4D01AA69E0A00363579 /* ABReportSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABReportSlice.h; path = albacore/ABModel/ABReportSlice.h; sourceTree = "<group>"; };
+		EABFF4D11AA69E0A00363579 /* ABReportSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABReportSlice.m; path = albacore/ABModel/ABReportSlice.m; sourceTree = "<group>"; };
+		EABFF4D31AA69F1600363579 /* ABSwell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSwell.h; path = albacore/ABModel/ABSwell.h; sourceTree = "<group>"; };
+		EABFF4D41AA69F1600363579 /* ABSwell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSwell.m; path = albacore/ABModel/ABSwell.m; sourceTree = "<group>"; };
+		EABFF4D61AA69F8E00363579 /* ABWind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABWind.h; path = albacore/ABModel/ABWind.h; sourceTree = "<group>"; };
+		EABFF4D71AA69F8E00363579 /* ABWind.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABWind.m; path = albacore/ABModel/ABWind.m; sourceTree = "<group>"; };
+		EABFF4D91AA69F9C00363579 /* ABCondition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABCondition.h; path = albacore/ABModel/ABCondition.h; sourceTree = "<group>"; };
+		EABFF4DA1AA69F9C00363579 /* ABCondition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABCondition.m; path = albacore/ABModel/ABCondition.m; sourceTree = "<group>"; };
+		EABFF4DC1AA69FA800363579 /* ABCharts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABCharts.h; path = albacore/ABModel/ABCharts.h; sourceTree = "<group>"; };
+		EABFF4DD1AA69FA800363579 /* ABCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABCharts.m; path = albacore/ABModel/ABCharts.m; sourceTree = "<group>"; };
 		EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albacore-logo-2x.png"; sourceTree = "<group>"; };
 		EAE6D5C81A9C5A940020EA72 /* splash-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-page.png"; sourceTree = "<group>"; };
+		EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +91,8 @@
 		EA6E68DA1A96D696005D8AB0 = {
 			isa = PBXGroup;
 			children = (
+				EABFF4C81AA6920A00363579 /* ABTableViewDelegate.h */,
+				EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */,
 				EA6E68E51A96D696005D8AB0 /* albacore */,
 				EA6E68FF1A96D697005D8AB0 /* albacoreTests */,
 				EA6E68E41A96D696005D8AB0 /* Products */,
@@ -85,10 +111,13 @@
 		EA6E68E51A96D696005D8AB0 /* albacore */ = {
 			isa = PBXGroup;
 			children = (
+				EABFF4DF1AA6A17300363579 /* ABModel */,
 				EA6E68EA1A96D696005D8AB0 /* AppDelegate.h */,
 				EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */,
 				EA6E68ED1A96D696005D8AB0 /* SpotViewController.h */,
 				EA6E68EE1A96D696005D8AB0 /* SpotViewController.m */,
+				EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */,
+				EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */,
 				EA6E68F01A96D696005D8AB0 /* Main.storyboard */,
 				EA6E68F31A96D696005D8AB0 /* Images.xcassets */,
 				EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */,
@@ -122,6 +151,26 @@
 				EA6E69011A96D697005D8AB0 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EABFF4DF1AA6A17300363579 /* ABModel */ = {
+			isa = PBXGroup;
+			children = (
+				EABFF4CD1AA6977300363579 /* ABSurfSpot.h */,
+				EABFF4CE1AA6977300363579 /* ABSurfSpot.m */,
+				EABFF4D01AA69E0A00363579 /* ABReportSlice.h */,
+				EABFF4D11AA69E0A00363579 /* ABReportSlice.m */,
+				EABFF4D31AA69F1600363579 /* ABSwell.h */,
+				EABFF4D41AA69F1600363579 /* ABSwell.m */,
+				EABFF4D61AA69F8E00363579 /* ABWind.h */,
+				EABFF4D71AA69F8E00363579 /* ABWind.m */,
+				EABFF4D91AA69F9C00363579 /* ABCondition.h */,
+				EABFF4DA1AA69F9C00363579 /* ABCondition.m */,
+				EABFF4DC1AA69FA800363579 /* ABCharts.h */,
+				EABFF4DD1AA69FA800363579 /* ABCharts.m */,
+			);
+			name = ABModel;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		EAE6D5C61A9C5A940020EA72 /* Images */ = {
@@ -238,6 +287,14 @@
 				EA6E68EF1A96D696005D8AB0 /* SpotViewController.m in Sources */,
 				EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */,
 				EA6E68E91A96D696005D8AB0 /* main.m in Sources */,
+				EABFF4D81AA69F8E00363579 /* ABWind.m in Sources */,
+				EABFF4DE1AA69FA800363579 /* ABCharts.m in Sources */,
+				EAE6D5CD1A9D61C00020EA72 /* HomeViewController.m in Sources */,
+				EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */,
+				EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */,
+				EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */,
+				EABFF4DB1AA69F9C00363579 /* ABCondition.m in Sources */,
+				EABFF4CA1AA6920A00363579 /* ABTableViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

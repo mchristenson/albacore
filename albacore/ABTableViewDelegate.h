@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ABTableViewDelegate : NSObject
+@interface ABTableViewDelegate : NSObject<UITableViewDelegate, UITableViewDataSource>
+
+@property(nonatomic, strong) NSArray *surfSpots;
 
 @end

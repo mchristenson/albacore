@@ -14,31 +14,22 @@
 
 @implementation SpotViewController
 
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-}
-
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
         NSLog(@"init");
-        
     }
     
     return self;
-}
-
-- (void)awakeFromNib
-{
-    locationLabelString= @"Hello, Albacore again.";
 }
 
 - (void)loadView
 {
     self.view = [[UIView alloc] initWithFrame:CGRectZero];
     self.view.backgroundColor = [[UIColor alloc]initWithRed:0.63 green:0.96 blue:1.0 alpha:1.0];
+    
     NSLog(@"loadView");
 }
 
@@ -72,7 +63,6 @@
     NSLog(@"viewDidAppear");
 
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

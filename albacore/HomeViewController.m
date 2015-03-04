@@ -78,11 +78,11 @@
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect viewFrame = CGRectInset(frame, 10, 10);
     
-    self.spotTableView = [[UITableView alloc] initWithFrame:viewFrame style:UITableViewStylePlain];
+    self.spotTableViewController.tableView = [[UITableView alloc] initWithFrame:viewFrame style:UITableViewStylePlain];
     
-    [self.view addSubview:self.spotTableView];
-    self.spotTableView.delegate = self;
-    self.spotTableView.dataSource = self;
+    [self.view addSubview:self.spotTableViewController.tableView];
+    self.spotTableViewController.tableView.delegate = self;
+    self.spotTableViewController.tableView.dataSource = self;
 }
 
 

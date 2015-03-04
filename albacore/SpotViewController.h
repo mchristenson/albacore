@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AsyncData.h"
 
-@interface SpotViewController : UIViewController
+@interface SpotViewController : UIViewController<NSURLConnectionDataDelegate, AsyncDataProtocol>
 {
     UILabel *locationLabel;
     NSString *locationLabelString;
