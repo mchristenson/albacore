@@ -23,7 +23,10 @@
     self.homePageController = [[HomeViewController alloc] initWithNibName:nil bundle:nil];
     self.homePageController.title = @"Home";
     
-    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.homePageController];
+    self.surfSpotTableViewController = [[SurfSpotTableViewController alloc] initWithNibName:nil bundle:nil];
+    self.surfSpotTableViewController.title = @"Home";
+    
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:self.surfSpotTableViewController];
     
     self.window.rootViewController = self.navigationController;
     

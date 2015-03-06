@@ -8,14 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "SurfSpotViewController.h"
+#import "SurfSpotTableViewController.h"
 
-@interface HomeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
+
+@interface HomeViewController : UIViewController
 
 /* CHILDREN */
 @property(nonatomic, strong) SurfSpotViewController *surfSpotView;
     
 /* ROOT */
-@property(nonatomic, strong) UITableViewController *surfSpotTableViewController;
-@property(nonatomic, strong) NSArray *surfSpotList;
+@property(nonatomic, strong) SurfSpotTableViewController *surfSpotTableViewController;
 
 @end

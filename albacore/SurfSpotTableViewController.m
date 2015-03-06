@@ -14,15 +14,32 @@
 
 @implementation SurfSpotTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
+    
+    [self setupMyData];
+    
+    [self setupMyView];
 
+}
+
+- (void)setupMyData
+{
     self.surfSpots = [NSArray arrayWithObjects: [[ABSurfSpot alloc] initWithName:@"Santa Monica Pier" id:@"280"],
                                                 [[ABSurfSpot alloc] initWithName:@"Bay Street" id:@"2613"],
                                                 [[ABSurfSpot alloc] initWithName:@"El Porto" id:@"2677"],
                                                 [[ABSurfSpot alloc] initWithName:@"Sunset Blvd" id:@"3673"],
                                                 [[ABSurfSpot alloc] initWithName:@"Zuma Beach" id:@"853"],
                                                 nil];
+}
+
+- (void)setupMyView
+{
+    self.view.backgroundColor = [[UIColor alloc]initWithRed:0.63 green:0.96 blue:1.0 alpha:1.0];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,27 +49,31 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+//    return 0;
+//}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.surfSpots.count;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
-}
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"normal"];
+    
+    ABSurfSpot *tempSS = [self.surfSpots objectAtIndex:indexPath.row];
+    cell.textLabel.text = tempSS.name;
+    cell.backgroundColor = [[UIColor alloc]initWithRed:0.63 green:0.96 blue:1.0 alpha:1.0];
+    
+    UIView *backgroundColorView = [[UIView alloc] init];
+    backgroundColorView.backgroundColor = [[UIColor alloc]initWithRed:0.02 green:1.0 blue:0.78 alpha:1.0];
+    [cell setSelectedBackgroundView:backgroundColorView];
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
