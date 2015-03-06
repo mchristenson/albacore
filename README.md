@@ -1,6 +1,9 @@
 # albacore
 
 - Version 0.0
+  - Update 3.6.15
+    - Setup a List of Surf Spots on the Homepage which are selectable. When a cell is selected, the application opens a page - currently empty - with information regarding that spot. 
+
   - Update 3.3.15
     - Added Albacore Model Classes to use with MSW Data
   
