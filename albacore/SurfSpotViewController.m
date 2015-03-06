@@ -14,6 +14,7 @@
 
 @implementation SurfSpotViewController
 
+/* INITIALIZATION */
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -30,6 +31,8 @@
     return self;
 }
 
+
+/* VIEW SETUP */
 - (void)loadView
 {
     self.view = [[UIView alloc] initWithFrame:CGRectZero];
@@ -106,6 +109,8 @@
     NSLog(@"viewDidAppear");
 }
 
+
+/* UTILITY METHODS */
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
