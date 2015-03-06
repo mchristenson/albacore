@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AsyncData.h"
 
-@interface SpotViewController : UIViewController<NSURLConnectionDataDelegate, AsyncDataProtocol>
+@interface SpotViewController : UIViewController
 {
-    UILabel *locationLabel;
-    NSString *locationLabelString;
+    UILabel *reportLabel;
+    NSString *reportLabelString;
+    
+    UILabel *mapLabel;
+    NSString *mapLabelString;
+    
+    UILabel *averagesLabel;
+    NSString *averagesLabelString;
+    
+    UILabel *attractionsLabel;
+    NSString *attractionsLabelString;
 }
 
 

@@ -15,7 +15,6 @@
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
-		EABFF4CA1AA6920A00363579 /* ABTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */; };
 		EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4CE1AA6977300363579 /* ABSurfSpot.m */; };
 		EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D11AA69E0A00363579 /* ABReportSlice.m */; };
 		EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D41AA69F1600363579 /* ABSwell.m */; };
@@ -53,8 +52,6 @@
 		EA6E68FC1A96D697005D8AB0 /* albacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6E69011A96D697005D8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6E69021A96D697005D8AB0 /* albacoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albacoreTests.m; sourceTree = "<group>"; };
-		EABFF4C81AA6920A00363579 /* ABTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABTableViewDelegate.h; path = albacore/ABTableViewDelegate.h; sourceTree = "<group>"; };
-		EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABTableViewDelegate.m; path = albacore/ABTableViewDelegate.m; sourceTree = "<group>"; };
 		EABFF4CD1AA6977300363579 /* ABSurfSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSurfSpot.h; path = albacore/ABModel/ABSurfSpot.h; sourceTree = "<group>"; };
 		EABFF4CE1AA6977300363579 /* ABSurfSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSurfSpot.m; path = albacore/ABModel/ABSurfSpot.m; sourceTree = "<group>"; };
 		EABFF4D01AA69E0A00363579 /* ABReportSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABReportSlice.h; path = albacore/ABModel/ABReportSlice.h; sourceTree = "<group>"; };
@@ -94,8 +91,6 @@
 		EA6E68DA1A96D696005D8AB0 = {
 			isa = PBXGroup;
 			children = (
-				EABFF4C81AA6920A00363579 /* ABTableViewDelegate.h */,
-				EABFF4C91AA6920A00363579 /* ABTableViewDelegate.m */,
 				EA6E68E51A96D696005D8AB0 /* albacore */,
 				EA6E68FF1A96D697005D8AB0 /* albacoreTests */,
 				EA6E68E41A96D696005D8AB0 /* Products */,
@@ -300,7 +295,6 @@
 				EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */,
 				EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */,
 				EABFF4DB1AA69F9C00363579 /* ABCondition.m in Sources */,
-				EABFF4CA1AA6920A00363579 /* ABTableViewDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
