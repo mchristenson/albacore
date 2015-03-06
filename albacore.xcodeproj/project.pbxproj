@@ -15,6 +15,7 @@
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
+		EA907B461AAA40B10070971A /* SurfSpotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */; };
 		EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4CE1AA6977300363579 /* ABSurfSpot.m */; };
 		EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D11AA69E0A00363579 /* ABReportSlice.m */; };
 		EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D41AA69F1600363579 /* ABSwell.m */; };
@@ -52,6 +53,8 @@
 		EA6E68FC1A96D697005D8AB0 /* albacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA6E69011A96D697005D8AB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA6E69021A96D697005D8AB0 /* albacoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albacoreTests.m; sourceTree = "<group>"; };
+		EA907B441AAA40B10070971A /* SurfSpotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfSpotTableViewController.h; sourceTree = "<group>"; };
+		EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurfSpotTableViewController.m; sourceTree = "<group>"; };
 		EABFF4CD1AA6977300363579 /* ABSurfSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSurfSpot.h; path = albacore/ABModel/ABSurfSpot.h; sourceTree = "<group>"; };
 		EABFF4CE1AA6977300363579 /* ABSurfSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSurfSpot.m; path = albacore/ABModel/ABSurfSpot.m; sourceTree = "<group>"; };
 		EABFF4D01AA69E0A00363579 /* ABReportSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABReportSlice.h; path = albacore/ABModel/ABReportSlice.h; sourceTree = "<group>"; };
@@ -112,6 +115,8 @@
 				EABFF4DF1AA6A17300363579 /* ABModel */,
 				EA6E68EA1A96D696005D8AB0 /* AppDelegate.h */,
 				EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */,
+				EA907B441AAA40B10070971A /* SurfSpotTableViewController.h */,
+				EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */,
 				EA6E68ED1A96D696005D8AB0 /* SurfSpotViewController.h */,
 				EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */,
 				EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */,
@@ -285,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6E68EF1A96D696005D8AB0 /* SurfSpotViewController.m in Sources */,
+				EA907B461AAA40B10070971A /* SurfSpotTableViewController.m in Sources */,
 				EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */,
 				EA14B8B81AA79F1B00B81BB7 /* ABComponent.m in Sources */,
 				EA6E68E91A96D696005D8AB0 /* main.m in Sources */,

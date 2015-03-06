@@ -14,4 +14,6 @@
 @property(nonatomic, strong) NSString *apiid;
 @property(nonatomic, strong) NSArray *reportDetails;
 
+- (instancetype)initWithName:(NSString *)name id:(NSString *)apiid;
+
 @end
