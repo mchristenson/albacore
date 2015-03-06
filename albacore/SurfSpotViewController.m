@@ -77,9 +77,9 @@
 -(void)viewWillAppear:(BOOL)animated
 {
     reportLabel.center = CGPointMake(-500.0, 100.0);
-    mapLabel.center = CGPointMake(-500.0, 200.0);
-    averagesLabel.center = CGPointMake(-500.0, 300.0);
-    attractionsLabel.center = CGPointMake(-500.0, 400.0);
+    mapLabel.center = CGPointMake(-1000.0, 200.0);
+    averagesLabel.center = CGPointMake(-1500.0, 300.0);
+    attractionsLabel.center = CGPointMake(-2000.0, 400.0);
     
     NSLog(@"viewWillAppear");
 }
