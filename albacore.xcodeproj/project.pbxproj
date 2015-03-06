@@ -11,7 +11,6 @@
 		EA6E68E91A96D696005D8AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68E81A96D696005D8AB0 /* main.m */; };
 		EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */; };
 		EA6E68EF1A96D696005D8AB0 /* SurfSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */; };
-		EA6E68F21A96D696005D8AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F01A96D696005D8AB0 /* Main.storyboard */; };
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
@@ -24,7 +23,6 @@
 		EABFF4DE1AA69FA800363579 /* ABCharts.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4DD1AA69FA800363579 /* ABCharts.m */; };
 		EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */; };
 		EAE6D5CA1A9C5A940020EA72 /* splash-page.png in Resources */ = {isa = PBXBuildFile; fileRef = EAE6D5C81A9C5A940020EA72 /* splash-page.png */; };
-		EAE6D5CD1A9D61C00020EA72 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +45,6 @@
 		EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EA6E68ED1A96D696005D8AB0 /* SurfSpotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SurfSpotViewController.h; sourceTree = "<group>"; };
 		EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurfSpotViewController.m; sourceTree = "<group>"; };
-		EA6E68F11A96D696005D8AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA6E68F31A96D696005D8AB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA6E68F61A96D696005D8AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EA6E68FC1A96D697005D8AB0 /* albacoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = albacoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,8 +66,6 @@
 		EABFF4DD1AA69FA800363579 /* ABCharts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABCharts.m; path = albacore/ABModel/ABCharts.m; sourceTree = "<group>"; };
 		EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albacore-logo-2x.png"; sourceTree = "<group>"; };
 		EAE6D5C81A9C5A940020EA72 /* splash-page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splash-page.png"; sourceTree = "<group>"; };
-		EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
-		EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,9 +114,6 @@
 				EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */,
 				EA6E68ED1A96D696005D8AB0 /* SurfSpotViewController.h */,
 				EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */,
-				EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */,
-				EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */,
-				EA6E68F01A96D696005D8AB0 /* Main.storyboard */,
 				EA6E68F31A96D696005D8AB0 /* Images.xcassets */,
 				EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */,
 				EAE6D5C61A9C5A940020EA72 /* Images */,
@@ -268,7 +260,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE6D5CA1A9C5A940020EA72 /* splash-page.png in Resources */,
-				EA6E68F21A96D696005D8AB0 /* Main.storyboard in Resources */,
 				EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */,
 				EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */,
 				EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */,
@@ -296,7 +287,6 @@
 				EA6E68E91A96D696005D8AB0 /* main.m in Sources */,
 				EABFF4D81AA69F8E00363579 /* ABWind.m in Sources */,
 				EABFF4DE1AA69FA800363579 /* ABCharts.m in Sources */,
-				EAE6D5CD1A9D61C00020EA72 /* HomeViewController.m in Sources */,
 				EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */,
 				EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */,
 				EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */,
@@ -323,14 +313,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EA6E68F01A96D696005D8AB0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EA6E68F11A96D696005D8AB0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

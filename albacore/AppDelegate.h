@@ -7,13 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HomeViewController.h"
+#import "SurfSpotTableViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navigationController;
-@property (strong, nonatomic) HomeViewController *homePageController;
 @property (strong, nonatomic) SurfSpotTableViewController *surfSpotTableViewController;
 
 @end

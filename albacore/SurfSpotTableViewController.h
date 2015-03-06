@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SurfSpotViewController.h"
 #import "ABSurfSpot.h"
 
 
 @interface SurfSpotTableViewController : UITableViewController
+
+@property(nonatomic, strong) SurfSpotViewController *surfSpotView;
 
 @property (nonatomic, retain) NSArray *surfSpots;
 

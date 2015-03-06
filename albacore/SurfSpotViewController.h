@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABSurfSpot.h"
 
 @interface SurfSpotViewController : UIViewController
 {
@@ -23,6 +24,7 @@
     NSString *attractionsLabelString;
 }
 
+@property ABSurfSpot *surfSpot;
 
 @end
 

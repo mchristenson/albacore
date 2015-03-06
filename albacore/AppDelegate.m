@@ -19,10 +19,7 @@
     CGRect fullScreen = [UIScreen mainScreen].bounds;
     
     self.window = [[UIWindow alloc] initWithFrame:fullScreen];
-    
-    self.homePageController = [[HomeViewController alloc] initWithNibName:nil bundle:nil];
-    self.homePageController.title = @"Home";
-    
+        
     self.surfSpotTableViewController = [[SurfSpotTableViewController alloc] initWithNibName:nil bundle:nil];
     self.surfSpotTableViewController.title = @"Home";
     

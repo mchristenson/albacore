@@ -76,6 +76,8 @@
 
 -(void)viewWillAppear:(BOOL)animated
 {
+    self.title = self.surfSpot.name;
+    
     reportLabel.center = CGPointMake(-500.0, 100.0);
     mapLabel.center = CGPointMake(-1000.0, 200.0);
     averagesLabel.center = CGPointMake(-1500.0, 300.0);
