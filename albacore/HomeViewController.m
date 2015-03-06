@@ -36,15 +36,15 @@
     //Setup self.view
     self.view = [[UIView alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.view.backgroundColor = [[UIColor alloc]initWithRed:0.63 green:0.96 blue:1.0 alpha:1.0];
+    
     NSLog(@"loadView");
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setupSpotData];
-    
-    [self setupSpotTableView];
+    [self setupSurfSpotData];
+    [self setupSurfSpotTableView];
     
     NSLog(@"viewDidLoad");
 }
@@ -68,9 +68,9 @@
 
 // SETUP DATA AND CHILDREN
 
-- (void)setupSpotData
+- (void)setupSurfSpotData
 {
-    self.spotList = [[NSArray alloc] initWithObjects:@"Santa Monica Pier", @"Bay Street", @"El Porto", nil];
+    self.surfSpotList = [[NSArray alloc] initWithObjects:@"Santa Monica Pier", @"Bay Street", @"El Porto", nil];
 }
 
 - (void)setupSpotTableView
@@ -78,11 +78,11 @@
     CGRect frame = [UIScreen mainScreen].bounds;
     CGRect viewFrame = CGRectInset(frame, 10, 10);
     
-    self.spotTableViewController.tableView = [[UITableView alloc] initWithFrame:viewFrame style:UITableViewStylePlain];
+    self.surfSpotTableViewController.tableView = [[UITableView alloc] initWithFrame:viewFrame style:UITableViewStylePlain];
     
-    [self.view addSubview:self.spotTableViewController.tableView];
-    self.spotTableViewController.tableView.delegate = self;
-    self.spotTableViewController.tableView.dataSource = self;
+    [self.view addSubview:self.surfSpotTableViewController.tableView];
+    self.surfSpotTableViewController.tableView.delegate = self;
+    self.surfSpotTableViewController.tableView.dataSource = self;
 }
 
 
@@ -90,9 +90,9 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.spotView = [[SurfSpotViewController alloc] initWithNibName:nil bundle:nil];
-    self.spotView.title = @"Santa Monica";
-    [self.navigationController pushViewController:self.spotView animated:YES];
+    self.surfSpotView = [[SurfSpotViewController alloc] initWithNibName:nil bundle:nil];
+    self.surfSpotView.title = @"Santa Monica";
+    [self.navigationController pushViewController:self.surfSpotView animated:YES];
 }
 
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event
@@ -113,7 +113,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSInteger itemCount = [self.spotList count];
+    NSInteger itemCount = [self.surfSpotList count];
     return itemCount;
 }
 
@@ -122,7 +122,7 @@
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"normal"];
     
     //build cell views...
-    cell.textLabel.text = [self.spotList objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.surfSpotList objectAtIndex:indexPath.row];
     
     return cell;
 }

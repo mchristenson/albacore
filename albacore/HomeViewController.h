@@ -12,10 +12,10 @@
 @interface HomeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 //Spot Controller
-@property(nonatomic, strong) SurfSpotViewController *spotView;
+@property(nonatomic, strong) SurfSpotViewController *surfSpotView;
     
 //Table View
-@property(nonatomic, strong) UITableViewController *spotTableViewController;
-@property(nonatomic, strong) NSArray *spotList;
+@property(nonatomic, strong) UITableViewController *surfSpotTableViewController;
+@property(nonatomic, strong) NSArray *surfSpotList;
 
 @end
