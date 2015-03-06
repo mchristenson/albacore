@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "SpotViewController.h"
+#import "SurfSpotViewController.h"
 
 @interface HomeViewController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 //Spot Controller
-@property(nonatomic, strong) SpotViewController *spotView;
+@property(nonatomic, strong) SurfSpotViewController *spotView;
     
 //Table View
 @property(nonatomic, strong) UITableViewController *spotTableViewController;

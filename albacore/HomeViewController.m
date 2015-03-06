@@ -90,7 +90,7 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    self.spotView = [[SpotViewController alloc] initWithNibName:nil bundle:nil];
+    self.spotView = [[SurfSpotViewController alloc] initWithNibName:nil bundle:nil];
     self.spotView.title = @"Santa Monica";
     [self.navigationController pushViewController:self.spotView animated:YES];
 }

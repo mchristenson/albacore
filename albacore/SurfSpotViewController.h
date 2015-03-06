@@ -1,5 +1,5 @@
 //
-//  SpotViewController.h
+//  SurfSpotViewController.h
 //  albacore
 //
 //  Created by Mark Christenson on 2/19/15.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpotViewController : UIViewController
+@interface SurfSpotViewController : UIViewController
 {
     UILabel *reportLabel;
     NSString *reportLabelString;

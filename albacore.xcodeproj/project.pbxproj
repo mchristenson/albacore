@@ -10,7 +10,7 @@
 		EA14B8B81AA79F1B00B81BB7 /* ABComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = EA14B8B71AA79F1B00B81BB7 /* ABComponent.m */; };
 		EA6E68E91A96D696005D8AB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68E81A96D696005D8AB0 /* main.m */; };
 		EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */; };
-		EA6E68EF1A96D696005D8AB0 /* SpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EE1A96D696005D8AB0 /* SpotViewController.m */; };
+		EA6E68EF1A96D696005D8AB0 /* SurfSpotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */; };
 		EA6E68F21A96D696005D8AB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F01A96D696005D8AB0 /* Main.storyboard */; };
 		EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F31A96D696005D8AB0 /* Images.xcassets */; };
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
@@ -44,8 +44,8 @@
 		EA6E68E81A96D696005D8AB0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EA6E68EA1A96D696005D8AB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EA6E68ED1A96D696005D8AB0 /* SpotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpotViewController.h; sourceTree = "<group>"; };
-		EA6E68EE1A96D696005D8AB0 /* SpotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpotViewController.m; sourceTree = "<group>"; };
+		EA6E68ED1A96D696005D8AB0 /* SurfSpotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SurfSpotViewController.h; sourceTree = "<group>"; };
+		EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SurfSpotViewController.m; sourceTree = "<group>"; };
 		EA6E68F11A96D696005D8AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA6E68F31A96D696005D8AB0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EA6E68F61A96D696005D8AB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -112,8 +112,8 @@
 				EABFF4DF1AA6A17300363579 /* ABModel */,
 				EA6E68EA1A96D696005D8AB0 /* AppDelegate.h */,
 				EA6E68EB1A96D696005D8AB0 /* AppDelegate.m */,
-				EA6E68ED1A96D696005D8AB0 /* SpotViewController.h */,
-				EA6E68EE1A96D696005D8AB0 /* SpotViewController.m */,
+				EA6E68ED1A96D696005D8AB0 /* SurfSpotViewController.h */,
+				EA6E68EE1A96D696005D8AB0 /* SurfSpotViewController.m */,
 				EAE6D5CB1A9D61C00020EA72 /* HomeViewController.h */,
 				EAE6D5CC1A9D61C00020EA72 /* HomeViewController.m */,
 				EA6E68F01A96D696005D8AB0 /* Main.storyboard */,
@@ -284,7 +284,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA6E68EF1A96D696005D8AB0 /* SpotViewController.m in Sources */,
+				EA6E68EF1A96D696005D8AB0 /* SurfSpotViewController.m in Sources */,
 				EA6E68EC1A96D696005D8AB0 /* AppDelegate.m in Sources */,
 				EA14B8B81AA79F1B00B81BB7 /* ABComponent.m in Sources */,
 				EA6E68E91A96D696005D8AB0 /* main.m in Sources */,
