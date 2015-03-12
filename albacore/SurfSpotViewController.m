@@ -38,49 +38,23 @@
     self.view = [[UIView alloc] initWithFrame:CGRectZero];
     self.view.backgroundColor = [[UIColor alloc]initWithRed:0.63 green:0.96 blue:1.0 alpha:1.0];
     
+    asyncDataQueue = dispatch_queue_create("asyncDataQueue", DISPATCH_QUEUE_PRIORITY_DEFAULT);
+    
     NSLog(@"loadView");
 }
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
-    self.view.frame = [UIScreen mainScreen].bounds;
-
-    reportLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 100.0, 250.0, 40.0)];
-    reportLabel.text = reportLabelString;
-    reportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
-    reportLabel.textColor = [UIColor darkGrayColor];
-    
-    currentReportLabel = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 120.0, [[UIScreen mainScreen] bounds].size.width, 70.0)];
-    currentReportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:15.0];
-    currentReportLabel.textColor = [UIColor darkGrayColor];
-    currentReportLabel.backgroundColor = [UIColor lightGrayColor];
-    
-    mapLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 200.0, 250.0, 40.0)];
-    mapLabel.text = mapLabelString;
-    mapLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
-    mapLabel.textColor = [UIColor darkGrayColor];
-    
-    averagesLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 300.0, 250.0, 40.0)];
-    averagesLabel.text = averagesLabelString;
-    averagesLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
-    averagesLabel.textColor = [UIColor darkGrayColor];
-    
-    attractionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 400.0, 250.0, 40.0)];
-    attractionsLabel.text = attractionsLabelString;
-    attractionsLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
-    attractionsLabel.textColor = [UIColor darkGrayColor];
-    
-    [self.view addSubview:reportLabel];
-    [self.view addSubview:currentReportLabel];
-    [self.view addSubview:mapLabel];
-    [self.view addSubview:averagesLabel];
-    [self.view addSubview:attractionsLabel];
+    [self setupHeaderLabels];
+    [self setupDataLabels];
+    [self setupButtons];
     
     NSLog(@"viewDidLoad");
 }
 
--(void)viewWillAppear:(BOOL)animated
+- (void)viewWillAppear:(BOOL)animated
 {
     self.title = self.surfSpot.name;
     
@@ -92,7 +66,7 @@
     NSLog(@"viewWillAppear");
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)viewDidAppear:(BOOL)animated
 {
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:0.5];
@@ -118,11 +92,59 @@
 }
 
 
-/* TOUCH SETUP */
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+/* UI COMPONENT SETUP */
+- (void)setupHeaderLabels
 {
-    dispatch_queue_t myqueue = dispatch_queue_create("myqueue", DISPATCH_QUEUE_PRIORITY_DEFAULT);
-    dispatch_async(myqueue, ^{
+    reportLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 100.0, 250.0, 40.0)];
+    reportLabel.text = reportLabelString;
+    reportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
+    reportLabel.textColor = [UIColor darkGrayColor];
+    
+    mapLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 200.0, 250.0, 40.0)];
+    mapLabel.text = mapLabelString;
+    mapLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
+    mapLabel.textColor = [UIColor darkGrayColor];
+    
+    averagesLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 300.0, 250.0, 40.0)];
+    averagesLabel.text = averagesLabelString;
+    averagesLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
+    averagesLabel.textColor = [UIColor darkGrayColor];
+    
+    attractionsLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 400.0, 250.0, 40.0)];
+    attractionsLabel.text = attractionsLabelString;
+    attractionsLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
+    attractionsLabel.textColor = [UIColor darkGrayColor];
+    
+    [self.view addSubview:reportLabel];
+    [self.view addSubview:mapLabel];
+    [self.view addSubview:averagesLabel];
+    [self.view addSubview:attractionsLabel];
+
+}
+
+- (void)setupDataLabels
+{
+    self.view.frame = [UIScreen mainScreen].bounds;
+    
+    currentReportLabel = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 120.0, [[UIScreen mainScreen] bounds].size.width, 70.0)];
+    currentReportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:15.0];
+    currentReportLabel.textColor = [UIColor darkGrayColor];
+    currentReportLabel.backgroundColor = [[UIColor alloc]initWithRed:0.70 green:1.0 blue:1.0 alpha:1.0];
+    
+    [self.view addSubview:currentReportLabel];
+}
+
+- (void)setupButtons
+{
+    refreshButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refreshData)];
+    self.navigationItem.rightBarButtonItem = refreshButton;
+}
+
+
+/* USER INTERACTION HANDLERS */
+- (void)refreshData
+{
+    dispatch_async(asyncDataQueue, ^{
         [self downloadJSON];
     });
 }
@@ -134,7 +156,7 @@
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Keys" ofType:@"plist"]];
     NSString *apiKey = [dictionary objectForKey:@"msw_api_key"];
     
-    NSString *urlString = [NSString stringWithFormat:@"http://magicseaweed.com/api/%@/forecast/?spot_id=280", apiKey];
+    NSString *urlString = [NSString stringWithFormat:@"http://magicseaweed.com/api/%@/forecast/?spot_id=%@", apiKey, self.surfSpot.apiid];
     NSURL *url = [NSURL URLWithString:urlString];
     NSData *resultData = [NSData dataWithContentsOfURL:url];
     NSString *resultString = [[NSString alloc] initWithData:resultData encoding:NSUTF8StringEncoding];
@@ -146,7 +168,8 @@
 
 
 /* UTILITY METHODS */
-- (void)didReceiveMemoryWarning {
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }

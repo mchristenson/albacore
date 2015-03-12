@@ -25,6 +25,12 @@
     
     /* BODY LABEL IVARS */
     UITextView *currentReportLabel;
+    
+    /* OTHER UI COMPONENTS */
+    UIBarButtonItem *refreshButton;
+    
+    /* ASYNC DATA QUEUE */
+    dispatch_queue_t asyncDataQueue;
 }
 
 @property ABSurfSpot *surfSpot;
