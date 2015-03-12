@@ -51,6 +51,11 @@
     reportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
     reportLabel.textColor = [UIColor darkGrayColor];
     
+    currentReportLabel = [[UITextView alloc] initWithFrame:CGRectMake(0.0, 120.0, [[UIScreen mainScreen] bounds].size.width, 70.0)];
+    currentReportLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:15.0];
+    currentReportLabel.textColor = [UIColor darkGrayColor];
+    currentReportLabel.backgroundColor = [UIColor lightGrayColor];
+    
     mapLabel = [[UILabel alloc] initWithFrame:CGRectMake(10.0, 200.0, 250.0, 40.0)];
     mapLabel.text = mapLabelString;
     mapLabel.font = [UIFont fontWithName:@"Menlo-Italic" size:17.0];
@@ -67,6 +72,7 @@
     attractionsLabel.textColor = [UIColor darkGrayColor];
     
     [self.view addSubview:reportLabel];
+    [self.view addSubview:currentReportLabel];
     [self.view addSubview:mapLabel];
     [self.view addSubview:averagesLabel];
     [self.view addSubview:attractionsLabel];
@@ -109,6 +115,30 @@
     [UIView commitAnimations];
     
     NSLog(@"viewDidAppear");
+}
+
+
+/* TOUCH SETUP */
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    dispatch_queue_t myqueue = dispatch_queue_create("myqueue", DISPATCH_QUEUE_PRIORITY_DEFAULT);
+    dispatch_async(myqueue, ^{
+        [self downloadJSON];
+    });
+}
+
+
+/* NETWORKING */
+- (void)downloadJSON
+{
+    NSString *urlString = @"http://magicseaweed.com/";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSData *resultData = [NSData dataWithContentsOfURL:url];
+    NSString *resultString = [[NSString alloc] initWithData:resultData encoding:NSUTF8StringEncoding];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        currentReportLabel.text = resultString;
+    });
 }
 
 

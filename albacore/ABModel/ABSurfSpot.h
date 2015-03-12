@@ -12,7 +12,7 @@
 
 @property(nonatomic, strong) NSString *name;
 @property(nonatomic, strong) NSString *apiid;
-@property(nonatomic, strong) NSArray *reportDetails;
+@property(nonatomic, strong) NSMutableArray *reportDetails;
 
 - (instancetype)initWithName:(NSString *)name id:(NSString *)apiid;
 

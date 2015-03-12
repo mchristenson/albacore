@@ -11,17 +11,20 @@
 
 @interface SurfSpotViewController : UIViewController
 {
-    /* LABEL IVARS */
+    /* HEADER LABEL IVARS */
     UILabel *reportLabel;
     UILabel *mapLabel;
     UILabel *averagesLabel;
     UILabel *attractionsLabel;
     
-    /* LABEL SUPPORT IVARS */
+    /* HEADER LABEL SUPPORT IVARS */
     NSString *reportLabelString;
     NSString *mapLabelString;
     NSString *averagesLabelString;
     NSString *attractionsLabelString;
+    
+    /* BODY LABEL IVARS */
+    UITextView *currentReportLabel;
 }
 
 @property ABSurfSpot *surfSpot;

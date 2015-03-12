@@ -15,6 +15,7 @@
 		EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA6E68F51A96D696005D8AB0 /* LaunchScreen.xib */; };
 		EA6E69031A96D697005D8AB0 /* albacoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EA6E69021A96D697005D8AB0 /* albacoreTests.m */; };
 		EA907B461AAA40B10070971A /* SurfSpotTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */; };
+		EA92935B1AAA72F1000D6C85 /* seafoam-star.png in Resources */ = {isa = PBXBuildFile; fileRef = EA92935A1AAA72F1000D6C85 /* seafoam-star.png */; };
 		EABFF4CF1AA6977300363579 /* ABSurfSpot.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4CE1AA6977300363579 /* ABSurfSpot.m */; };
 		EABFF4D21AA69E0A00363579 /* ABReportSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D11AA69E0A00363579 /* ABReportSlice.m */; };
 		EABFF4D51AA69F1600363579 /* ABSwell.m in Sources */ = {isa = PBXBuildFile; fileRef = EABFF4D41AA69F1600363579 /* ABSwell.m */; };
@@ -52,6 +53,7 @@
 		EA6E69021A96D697005D8AB0 /* albacoreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = albacoreTests.m; sourceTree = "<group>"; };
 		EA907B441AAA40B10070971A /* SurfSpotTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurfSpotTableViewController.h; sourceTree = "<group>"; };
 		EA907B451AAA40B10070971A /* SurfSpotTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurfSpotTableViewController.m; sourceTree = "<group>"; };
+		EA92935A1AAA72F1000D6C85 /* seafoam-star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "seafoam-star.png"; sourceTree = "<group>"; };
 		EABFF4CD1AA6977300363579 /* ABSurfSpot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABSurfSpot.h; path = albacore/ABModel/ABSurfSpot.h; sourceTree = "<group>"; };
 		EABFF4CE1AA6977300363579 /* ABSurfSpot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ABSurfSpot.m; path = albacore/ABModel/ABSurfSpot.m; sourceTree = "<group>"; };
 		EABFF4D01AA69E0A00363579 /* ABReportSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ABReportSlice.h; path = albacore/ABModel/ABReportSlice.h; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 		EAE6D5C61A9C5A940020EA72 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EA92935A1AAA72F1000D6C85 /* seafoam-star.png */,
 				EAE6D5C71A9C5A940020EA72 /* albacore-logo-2x.png */,
 				EAE6D5C81A9C5A940020EA72 /* splash-page.png */,
 			);
@@ -263,6 +266,7 @@
 				EAE6D5C91A9C5A940020EA72 /* albacore-logo-2x.png in Resources */,
 				EA6E68F71A96D696005D8AB0 /* LaunchScreen.xib in Resources */,
 				EA6E68F41A96D696005D8AB0 /* Images.xcassets in Resources */,
+				EA92935B1AAA72F1000D6C85 /* seafoam-star.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
