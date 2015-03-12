@@ -131,7 +131,10 @@
 /* NETWORKING */
 - (void)downloadJSON
 {
-    NSString *urlString = @"http://magicseaweed.com/";
+    NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Keys" ofType:@"plist"]];
+    NSString *apiKey = [dictionary objectForKey:@"msw_api_key"];
+    
+    NSString *urlString = [NSString stringWithFormat:@"http://magicseaweed.com/api/%@/forecast/?spot_id=280", apiKey];
     NSURL *url = [NSURL URLWithString:urlString];
     NSData *resultData = [NSData dataWithContentsOfURL:url];
     NSString *resultString = [[NSString alloc] initWithData:resultData encoding:NSUTF8StringEncoding];
